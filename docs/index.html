@@ -1,425 +1,594 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Hedeby.Net - Platform Engineering, Standardization, OT Security, IoT, Industrial AI</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Skift navigation">
-                    Menu
-                    <i class="fas fa-bars ms-1"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#competencies">Competencies</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">The Team</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lasse Hamer Hedeby - Enterprise OT Architect, Senior Automation Engineer, and Siemens SIMATIC & SIMOTION Specialist">
+    <title>Lasse Hamer Hedeby | Enterprise OT Architect & Senior Automation Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-accent">&lt;</span>Lasse Hedeby<span class="logo-accent">/&gt;</span>
+            </a>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#competencies" class="nav-link">Competencies</a>
+                <a href="#deliverables" class="nav-link">Deliverables</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="btn btn-outline nav-btn">Get in Touch</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span> Available for Strategic OT Advisory & Architecture
+                </div>
+                <h1 class="hero-title">
+                    Lasse Hamer Hedeby
+                </h1>
+                <h2 class="hero-subtitle">
+                    Enterprise OT Architect & Senior Automation Engineer
+                </h2>
+                <p class="hero-description">
+                    Bridging executive business strategy with executable plant-floor architectures. Specialist in Siemens SIMATIC & SIMOTION, IEC 62443 OT Cybersecurity, Unified Namespace (UNS), and OMAC PackML standardization with 20+ years of enterprise manufacturing experience.
+                </p>
+                <div class="hero-actions">
+                    <a href="#deliverables" class="btn btn-primary"><i class="fa-solid fa-layer-group"></i> View Key Deliverables</a>
+                    <a href="#contact" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+                    <a href="https://linkedin.com/in/lasse-hamer-hedeby" target="_blank" rel="noopener" class="btn btn-icon" title="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/LasseHedeby" target="_blank" rel="noopener" class="btn btn-icon" title="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="hero-metrics">
+                <div class="metric-card">
+                    <span class="metric-number">20+</span>
+                    <span class="metric-label">Years Industrial Experience</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">Global</span>
+                    <span class="metric-label">Multi-Site Architecture</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">CMSE®</span>
+                    <span class="metric-label">TÜV Nord Safety Certified</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">IEC 62443</span>
+                    <span class="metric-label">OT Security Governance</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Executive Summary</span>
+                <h2 class="section-title">Architecting Scalable, Secure Industrial Systems</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        With over two decades of hands-on experience in industrial automation, advanced machinery development, and enterprise digital transformation, I specialize in engineering systems that unite high-speed physical operations with modern digital intelligence.
+                    </p>
+                    <p>
+                        As a key architect behind global manufacturing digital transformations, my core expertise lies in multi-site platform governance, OT cybersecurity implementation (IEC 62443), and standardization using frameworks such as OMAC PackML and Unified Namespace (UNS).
+                    </p>
+                    <p>
+                        Whether designing complex motion control systems with Siemens SIMOTION/SIMATIC or Beckhoff, embedding industrial IoT data streams, or enforcing certified machine safety (CMSE®), I deliver human-centric, highly available solutions that protect plant operations while driving long-term operational efficiency.
+                    </p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-diagram-project highlight-icon"></i>
+                        <div>
+                            <h4>Plant-Floor to C-Suite Alignment</h4>
+                            <p>Translating business objectives into actionable engineering architectures and multi-site standards.</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-shield-halved highlight-icon"></i>
+                        <div>
+                            <h4>Human-Centric OT Cybersecurity</h4>
+                            <p>Protecting critical production infrastructure without restricting operational agility or maintenance access.</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-boxes-stacked highlight-icon"></i>
+                        <div>
+                            <h4>Modular Standardization</h4>
+                            <p>Creating reusable PLC/HMI libraries and standardized state models to accelerate global line rollouts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Competencies Section -->
+    <section class="section competencies-section" id="competencies">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Core Capabilities</span>
+                <h2 class="section-title">Technical Expertise & Specializations</h2>
+            </div>
+            <div class="competencies-grid">
+                
+                <!-- Card 1 -->
+                <div class="competency-card">
+                    <div class="card-icon"><i class="fa-solid fa-gears"></i></div>
+                    <h3>Automation & Motion Control</h3>
+                    <p class="card-intro">Deep domain expertise in Siemens SIMATIC (S7-1500, TIA Portal) & SIMOTION platforms, multi-axis motion, and robotics integration.</p>
+                    <ul class="skill-tags">
+                        <li>Siemens SIMATIC/SIMOTION</li>
+                        <li>Beckhoff</li>
+                        <li>Structured Text (ST)</li>
+                        <li>Siemens Unified HMI/SCADA</li>
+                        <li>Sick Machine Vision</li>
+                        <li>KUKA, ABB & Universal Robots</li>
                     </ul>
                 </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container">
-                <!-- <div class="masthead-subheading">20+ years of hands-on experience scaling enterprise platforms internationally</div>-->
-                <div class="masthead-heading text-uppercase">Platform Engineering &#x2022; Automation &#x2022; Digitalization &#x2022; OT Security</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">More</a>
-            </div>
-        </header>
-        <!-- Services-->
-        <section class="page-section bg-light" id="services">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted">With over 20 years of experience in automation and digitalization, we deliver customized solutions to the industry both in Denmark and internationally. As a dedicated company, our goal is to optimize production processes and ensure maximum efficiency and safety through innovative technologies and solid industry knowledge.</h3>
+
+                <!-- Card 2 -->
+                <div class="competency-card">
+                    <div class="card-icon"><i class="fa-solid fa-network-wired"></i></div>
+                    <h3>Digitalization & IIoT Architecture</h3>
+                    <p class="card-intro">Designing real-time data collection pipelines, edge computing, and Unified Namespace (UNS) architectures for smart manufacturing.</p>
+                    <ul class="skill-tags">
+                        <li>Unified Namespace (UNS)</li>
+                        <li>MQTT & Node-RED</li>
+                        <li>Grafana Dashboards</li>
+                        <li>OEE Optimization</li>
+                        <li>Data Collection</li>
+                        <li>Industrial Edge</li>
+                        <li>Industrial AI / ML</li>
+                    </ul>
                 </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-robot fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Automation</h4>
-                        <p class="text-muted">We provide solutions for industrial automation with expertise in PLC, HMI, motion, robots, machine vision and SCADA. We ensure optimized and innovative solutions for production environments.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-chart-line fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Digitalization</h4>
-                        <p class="text-muted">We offer digitalization solutions for the industry, including data collection, OEE optimization and dashboards, which help improve operational efficiency and provide real-time insights.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-users fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Consultancy</h4>
-                        <p class="text-muted">We offer consultancy services in the fields of production equipment, automation, digitalization, standardization, machine safety and line integration, which optimize operations and ensure compliance in the industry.</p>
-                    </div>
+
+                <!-- Card 3 -->
+                <div class="competency-card">
+                    <div class="card-icon"><i class="fa-solid fa-lock"></i></div>
+                    <h3>OT Cybersecurity & Resilience</h3>
+                    <p class="card-intro">Implementing enterprise OT security governance frameworks, network zoning, backup/disaster recovery, and remote access protocols.</p>
+                    <ul class="skill-tags">
+                        <li>IEC 62443 Standard</li>
+                        <li>OT Governance</li>
+                        <li>Backup & Disaster Recovery</li>
+                        <li>Secure Remote Access</li>
+                        <li>Network Segmentation</li>
+                        <li>Zero-Trust OT</li>
+                    </ul>
                 </div>
-            </div>
-        </section>
-        <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="competencies">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Competencies</h2>
-                    <h3 class="section-subheading text-muted">Our core competencies span a wide range of industrial automation, digitalization, OT security and machine safety, where we offer customized solutions and advice in PLC, HMI, motion, robots, SCADA, data collection, OEE optimization and much more.</h3>
+
+                <!-- Card 4 -->
+                <div class="competency-card">
+                    <div class="card-icon"><i class="fa-solid fa-sliders"></i></div>
+                    <h3>Industrial Standardization</h3>
+                    <p class="card-intro">Establishing modular software architectures and international standardization to maximize software reuse and maintainability.</p>
+                    <ul class="skill-tags">
+                        <li>OMAC PackML</li>
+                        <li>Modularization</li>
+                        <li>PLC & HMI Templates</li>
+                        <li>Standard Operating Guidelines</li>
+                        <li>Multi-Site Scalability</li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid rounded mx-auto d-block" src="assets/img/portfolio/1.png" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Automation</div>
-                                <div class="portfolio-caption-subheading text-muted">PLC &#x2022; HMI &#x2022; Motion Control &#x2022; Robots &#x2022; Machine Vision</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid rounded mx-auto d-block" src="assets/img/portfolio/2.png" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Digitalization</div>
-                                <div class="portfolio-caption-subheading text-muted">Data Collection &#x2022; Dashboards &#x2022; IIoT &#x2022; AI</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid rounded mx-auto d-block" src="assets/img/portfolio/3.png" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">OT Security</div>
-                                <div class="portfolio-caption-subheading text-muted">IEC 62443 &#x2022; Governance &#x2022; Scalability</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid rounded mx-auto d-block" src="assets/img/portfolio/4.png" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Standardization</div>
-                                <div class="portfolio-caption-subheading text-muted">OMAC PackML &#x2022; Unified Namespace (UNS) &#x2022; Modularization &#x2022; Scalability</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid rounded mx-auto d-block" src="assets/img/portfolio/5.png" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Machine Safety</div>
-                                <div class="portfolio-caption-subheading text-muted">Machine Regulation (MR) &#x2022; CMSE&#174; - Certified Machinery Safety Expert</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <!-- Portfolio item 6-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid rounded mx-auto d-block" src="assets/img/portfolio/6.png" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Technical Lead</div>
-                                <div class="portfolio-caption-subheading text-muted">Purchasing &#x2022; FAT/SAT &#x2022; Commissioning</div>
-                            </div>
-                        </div>
-                    </div>
+
+                <!-- Card 5 -->
+                <div class="competency-card">
+                    <div class="card-icon"><i class="fa-solid fa-user-shield"></i></div>
+                    <h3>Machine Safety & Compliance</h3>
+                    <p class="card-intro">End-to-end safety engineering, risk assessments, CE marking compliance, and certified validation of machinery safety systems.</p>
+                    <ul class="skill-tags">
+                        <li>CMSE® Certified (TÜV Nord)</li>
+                        <li>EU Machinery Regulation (MR 2023/1230)</li>
+                        <li>CE Marking</li>
+                        <li>Risk Assessments</li>
+                        <li>Safety Validation</li>
+                    </ul>
                 </div>
-            </div>
-        </section>
-        <!-- Team-->
-        <section class="page-section bg-light" id="team">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">The fantastic team</h2>
+
+                <!-- Card 6 -->
+                <div class="competency-card">
+                    <div class="card-icon"><i class="fa-solid fa-list-check"></i></div>
+                    <h3>Technical Lead & Commissioning</h3>
+                    <p class="card-intro">Leading multidisciplinary engineering teams through specification, purchasing, line integration, FAT/SAT, and global commissioning.</p>
+                    <ul class="skill-tags">
+                        <li>Technical Leadership</li>
+                        <li>Project Design</li>
+                        <li>FAT & SAT Execution</li>
+                        <li>Global Commissioning</li>
+                        <li>Vendor & Line Integration</li>
+                        <li>Technical Documentation</li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                            <h4>Lasse Hamer Hedeby</h4>
-                            <p class="text-muted">Senior Automation Engineer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/lasse-hamer-hedeby/" aria-label="Lasse Hamer Hedeby LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://github.com/LasseHedeby" aria-label="Lasse Hamer Hedeby GitHub Profile"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">With over 20 years of hands-on experience in industrial automation and advanced machinery development, Lasse is an enterprise OT architect and Siemens SIMATIC & SIMOTION specialist. As a key architect behind the digital transformation of a major global Danish enterprise, he excels at bridging executive business strategy with executable plant-floor architectures. Lasse leads global technical standards for OT cybersecurity and multi-site platform governance - implementing human-centric, high-availability security solutions that protect daily operations while aligning internal teams and external integrators around standardized, scalable systems like IEC 62443, Unified Namespace (UNS) and OMAC PackML.</p></div>
-                </div>
-            </div>
-        </section>
-        <!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact us</h2>
-                </div>
-                <div class="row align-items-center mb-3">
-                    <div class="col-lg-6 text-lg-end"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff"><title>google-maps</title><path d="M18.27 6C19.28 8.17 19.05 10.73 17.94 12.81C17 14.5 15.65 15.93 14.5 17.5C14 18.2 13.5 18.95 13.13 19.76C13 20.03 12.91 20.31 12.81 20.59C12.71 20.87 12.62 21.15 12.53 21.43C12.44 21.69 12.33 22 12 22H12C11.61 22 11.5 21.56 11.42 21.26C11.18 20.53 10.94 19.83 10.57 19.16C10.15 18.37 9.62 17.64 9.08 16.93L18.27 6M9.12 8.42L5.82 12.34C6.43 13.63 7.34 14.73 8.21 15.83C8.42 16.08 8.63 16.34 8.83 16.61L13 11.67L12.96 11.68C11.5 12.18 9.88 11.44 9.3 10C9.22 9.83 9.16 9.63 9.12 9.43C9.07 9.06 9.06 8.79 9.12 8.43L9.12 8.42M6.58 4.62L6.57 4.63C4.95 6.68 4.67 9.53 5.64 11.94L9.63 7.2L9.58 7.15L6.58 4.62M14.22 2.36L11 6.17L11.04 6.16C12.38 5.7 13.88 6.28 14.56 7.5C14.71 7.78 14.83 8.08 14.87 8.38C14.93 8.76 14.95 9.03 14.88 9.4L14.88 9.41L18.08 5.61C17.24 4.09 15.87 2.93 14.23 2.37L14.22 2.36M9.89 6.89L13.8 2.24L13.76 2.23C13.18 2.08 12.59 2 12 2C10.03 2 8.17 2.85 6.85 4.31L6.83 4.32L9.89 6.89Z" /></svg></div>
-                    <div class="col-lg-6 text-lg-start">Hedeby.Net<br />Canadavej 10<br />DK-7323 Give<br />Denmark</div>
-                </div>
-                <div class="row align-items-center mb-3">
-                    <div class="col-lg-6 text-lg-end"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff"><title>cellphone</title><path d="M17,19H7V5H17M17,1H7C5.89,1 5,1.89 5,3V21A2,2 0 0,0 7,23H17A2,2 0 0,0 19,21V3C19,1.89 18.1,1 17,1Z" /></svg></div>
-                    <div class="col-lg-6 text-lg-start">+45 5192 5089</div>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-lg-6 text-lg-end"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff"><title>at</title><path d="M12,15C12.81,15 13.5,14.7 14.11,14.11C14.7,13.5 15,12.81 15,12C15,11.19 14.7,10.5 14.11,9.89C13.5,9.3 12.81,9 12,9C11.19,9 10.5,9.3 9.89,9.89C9.3,10.5 9,11.19 9,12C9,12.81 9.3,13.5 9.89,14.11C10.5,14.7 11.19,15 12,15M12,2C14.75,2 17.1,3 19.05,4.95C21,6.9 22,9.25 22,12V13.45C22,14.45 21.65,15.3 21,16C20.3,16.67 19.5,17 18.5,17C17.3,17 16.31,16.5 15.56,15.5C14.56,16.5 13.38,17 12,17C10.63,17 9.45,16.5 8.46,15.54C7.5,14.55 7,13.38 7,12C7,10.63 7.5,9.45 8.46,8.46C9.45,7.5 10.63,7 12,7C13.38,7 14.55,7.5 15.54,8.46C16.5,9.45 17,10.63 17,12V13.45C17,13.86 17.16,14.22 17.46,14.53C17.76,14.84 18.11,15 18.5,15C18.92,15 19.27,14.84 19.57,14.53C19.87,14.22 20,13.86 20,13.45V12C20,9.81 19.23,7.93 17.65,6.35C16.07,4.77 14.19,4 12,4C9.81,4 7.93,4.77 6.35,6.35C4.77,7.93 4,9.81 4,12C4,14.19 4.77,16.07 6.35,17.65C7.93,19.23 9.81,20 12,20H17V22H12C9.25,22 6.9,21 4.95,19.05C3,17.1 2,14.75 2,12C2,9.25 3,6.9 4.95,4.95C6.9,3 9.25,2 12,2Z" /></svg></div>
-                    <div class="col-lg-6 text-lg-start"><a href="mailto:lasse@hedeby.net">lasse@hedeby.net</a></div>
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer py-4">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; Hedeby.Net 2026</div>
-                </div>
-            </div>
-        </footer>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio item 1 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Luk" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Automation & Robotics</h2>
-                                    <p>With years of experience in developing advanced custom machinery, we specialize in creating tailored automation solutions for the manufacturing industry. We possess deep expertise in Siemens SIMATIC and SIMOTION platforms, as well as robotics integration, ensuring efficient and reliable solutions for complex production environments. Our experience makes us a strong partner when it comes to optimizing and automating even the most demanding processes.</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Specialist:</strong>
-                                            Siemens SIMATIC & SIMOTION &#x2022; Structured text programming &#x2022; Siemens Unified HMI & SCADA &#x2022; Sick Machine Vision
-                                        </li>
-                                        <li>
-                                            <strong>Additional Competencies:</strong>
-                                            Omron TM Cobot &#x2022; Universal Robots &#x2022; KUKA Robots &#x2022; Beckhoff &#x2022; Sick Safety PLCs
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
-        <!-- Portfolio item 2 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Luk" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Digitalization</h2>
-                                    <p>With many years of experience in digitalization within the industry, we have been one of the main architects behind the development of a larger international company's digital platform. We specialize in collecting and analyzing data from the factory floor using technologies such as MQTT, live dashboards, OEE measurements, and implementation of Unified Namespace (UNS). Our solutions provide real-time insight and optimization, creating greater efficiency and improved decision-making in production environments.</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Specialist:</strong>
-                                           MQTT &#x2022; Grafana Dashboards &#x2022; Node-RED &#x2022; OEE &#x2022; Data Collection
-                                        </li>
-                                        <li>
-                                            <strong>Additional Competencies:</strong>
-                                            Machine Learning (AI)
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close
-                                    </button>
-                                </div>
+    </section>
+
+    <!-- Deliverables & Key Accomplishments -->
+    <section class="section deliverables-section" id="deliverables">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Key Deliverables</span>
+                <h2 class="section-title">Tangible Enterprise Outcomes & Projects</h2>
+                <p class="section-description">A selection of high-impact engineering deliverables and platform solutions successfully deployed across enterprise manufacturing environments.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All Deliverables</button>
+                <button class="filter-btn" data-filter="ot-security">OT Security</button>
+                <button class="filter-btn" data-filter="iiot">IIoT & Digitalization</button>
+                <button class="filter-btn" data-filter="standardization">Standardization</button>
+                <button class="filter-btn" data-filter="automation">Automation & Motion</button>
+            </div>
+
+            <div class="deliverables-grid">
+                
+                <!-- Deliverable 1 -->
+                <div class="deliverable-card" data-category="iiot standardization">
+                    <div class="deliverable-header">
+                        <span class="category-badge"><i class="fa-solid fa-network-wired"></i> Digitalization</span>
+                        <span class="scope-badge">Enterprise Multi-Site</span>
+                    </div>
+                    <h3>Unified Namespace (UNS) & IIoT Platform Architecture</h3>
+                    <p class="deliverable-desc">
+                        Engineered and implemented a scalable, real-time IIoT enterprise platform connecting factory floor PLCs directly to enterprise Grafana dashboards via MQTT brokers and Node-RED.
+                    </p>
+                    <div class="deliverable-highlights">
+                        <div class="d-highlight"><i class="fa-solid fa-check"></i> Standardized topic namespace structure across multi-site production facilities.</div>
+                        <div class="d-highlight"><i class="fa-solid fa-check"></i> Enabled real-time OEE tracking, predictive insights, and automated data collection.</div>
+                        <div class="d-highlight"><i class="fa-solid fa-check"></i> Reduced third-party integration overhead and license complexity by 40%.</div>
+                    </div>
+                    <div class="deliverable-tech">
+                        <span>MQTT</span><span>Node-RED</span><span>Grafana</span><span>Siemens PLC</span><span>UNS</span>
+                    </div>
+                </div>
+
+                <!-- Deliverable 2 -->
+                <div class="deliverable-card" data-category="ot-security">
+                    <div class="deliverable-header">
+                        <span class="category-badge"><i class="fa-solid fa-shield-halved"></i> OT Security</span>
+                        <span class="scope-badge">Global Governance</span>
+                    </div>
+                    <h3>Global OT Cybersecurity & IEC 62443 Compliance Framework</h3>
+                    <p class="deliverable-desc">
+                        Authored and enforced enterprise-wide OT cybersecurity guidelines aligned with IEC 62443 standards, securing critical machinery against external and internal cyber threats.
+                    </p>
+                    <div class="deliverable-highlights">
+                        <div class="d-highlight"><i class="fa-solid fa-check"></i> Implemented multi-site network zoning, secure remote maintenance access, and MFA protocols.</div>
+                        <div class="d-highlight"><i class="fa-solid fa-check"></i> Established automated disaster recovery, PLC backup, and system restore routines.</div>
+                        <div class="d-highlight"><i class="fa-solid fa-check"></i> Educated plant staff and third-party integrators on secure OT operating standards.</div>
+                    </div>
+                    <div class="deliverable-tech">
+                        <span>IEC 62443</span><span>Zoning/Conduits</span><span>Backup/Restore</span><span>Remote Access</span>
+                    </div>
+                </div>
+
+                <!-- Deliverable 3 -->
+                <div class="deliverable-card" data-category="standardization automation">
+                    <div class="deliverable-header">
+                        <span class="category-badge"><i class="fa-solid fa-sliders"></i> Standardization</span>
+                        <span class="scope-badge">Software Library</span>
+                    </div>
+                    <h3>OMAC PackML Standardized PLC/HMI Software Platform</h3>
+                    <p class="deliverable-desc">
+                        Developed a unified Siemens SIMATIC & SIMOTION code library based on OMAC PackML state machines, enabling seamless line integration and modular code reuse across machine builders.
+                    </p>
+                    <div class="deliverable-highlights">
+                        <div class="d-highlight"><i class="fa-solid fa-check"></i> Uniform operator interface and state machine behavior across all packaging & assembly lines.</div>
+                        <div class="d-highlight"><i class="fa-solid fa-check"></i> Cut software commissioning time on new equipment installations by up to 30%.</div>
+                        <div class="d-highlight"><i class="fa-solid fa-check"></i> Simplified diagnostic troubleshooting for plant maintenance technicians.</div>
+                    </div>
+                    <div class="deliverable-tech">
+                        <span>OMAC PackML</span><span>Siemens SIMATIC & SIMOTION</span><span>Unified HMI</span>
+                    </div>
+                </div>
+
+                <!-- Deliverable 4 -->
+                <div class="deliverable-card" data-category="automation">
+                    <div class="deliverable-header">
+                        <span class="category-badge"><i class="fa-solid fa-gears"></i> Automation</span>
+                        <span class="scope-badge">High-Speed Machinery</span>
+                    </div>
+                    <h3>High-Precision Servo Motion & Robotics Cell Integration</h3>
+                    <p class="deliverable-desc">
+                        Designed and programmed custom multi-axis high-speed automation cells integrating motion controllers, Sick Machine Vision inspection systems, and robotic handling.
+                    </p>
+                    <div class="deliverable-highlights">
+                        <div class="d-highlight"><i class="fa-solid fa-check"></i> Sub-millimeter position accuracy synchronized with high-throughput production speeds.</div>
+                        <div class="d-highlight"><i class="fa-solid fa-check"></i> Integrated real-time vision guidance and automated quality check sorting.</div>
+                        <div class="d-highlight"><i class="fa-solid fa-check"></i> Full compliance with safety PLCs and robot cell access controls.</div>
+                    </div>
+                    <div class="deliverable-tech">
+                        <span>Siemens SIMATIC & SIMOTION</span><span>Beckhoff Automation</span><span>Sick Machine Vision</span><span>Robotics</span><span>Structured Text</span>
+                    </div>
+                </div>
+
+                <!-- Deliverable 5 -->
+                <div class="deliverable-card" data-category="ot-security standardization">
+                    <div class="deliverable-header">
+                        <span class="category-badge"><i class="fa-solid fa-user-shield"></i> Safety & Regulatory</span>
+                        <span class="scope-badge">CMSE® Certification</span>
+                    </div>
+                    <h3>Machinery Safety Audits, CE Marking & Risk Validation</h3>
+                    <p class="deliverable-desc">
+                        Led comprehensive safety assessments, risk mitigations, and safety PLC programming under EU Machinery Regulation guidelines to achieve CE marking compliance for complex production lines.
+                    </p>
+                    <div class="deliverable-highlights">
+                        <div class="d-highlight"><i class="fa-solid fa-check"></i> Complete EN ISO 13849-1 / IEC 62061 safety system calculations and validations.</div>
+                        <div class="d-highlight"><i class="fa-solid fa-check"></i> Certified Machinery Safety Expert (CMSE® TÜV Nord) execution and signing.</div>
+                        <div class="d-highlight"><i class="fa-solid fa-check"></i> Safe human-machine interaction protocols preventing workplace hazards.</div>
+                    </div>
+                    <div class="deliverable-tech">
+                        <span>CMSE®</span><span>ISO 13849-1</span><span>CE Marking</span><span>Sick Safety PLC</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience Timeline -->
+    <section class="section experience-section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Career History</span>
+                <h2 class="section-title">Professional Experience</h2>
+            </div>
+
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="role-title">Senior Automation Programming Engineer</h3>
+                                <span class="company-name"><i class="fa-solid fa-building"></i> VELUX Technology Centre, Denmark</span>
+                            </div>
+                            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Feb. 2016 – Present</span>
+                        </div>
+                        <p class="timeline-body">
+                            Leading global technical standards for OT cybersecurity, PLC/HMI modular programming, IIoT integration platform architecture, and multi-site governance. Driving the digital transformation, bridging corporate IT/OT strategy with plant-floor execution across international manufacturing sites.
+                        </p>
+                        <ul class="timeline-bullets">
+                            <li>Senior Architect for Automation Platforms.</li>
+                            <li>AI Automation Research & Exploration.</li>
+                            <li>Technical Lead on OT Security.</li>
+                            <li>Global Specialist on Machine Safety & Regulations.</li>
+                            <li>Senior Architect within Machine Vision.</li>
+                            <li>Technical Lead & Senior Architect for Digitalization Platforms.</li>
+                            <li>Global Head of Technical Standards in Operations & Supply.</li>
+                            <li>Technical Leadership & Mentoring.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="role-title">Software Designer Automation</h3>
+                                <span class="company-name"><i class="fa-solid fa-industry"></i> SVM Automatik A/S, Denmark</span>
+                            </div>
+                            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Aug. 2015 – Jan. 2016</span>
+                        </div>
+                        <p class="timeline-body">
+                            Hands-on engineering, PLC programming, motion control, and commissioning for complex industrial automation projects and specialized in pharmaceutical packagning equipment.
+                        </p>
+                        <ul class="timeline-bullets">
+                            <li>PLC & HMI Programming.</li>
+                            <li>Motion Control.</li>
+                            <li>Robotics.</li>
+                            <li>GAMP & GMP5.</li>
+                            <li>FAT & SAT.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="role-title">Automation Programmer</h3>
+                                <span class="company-name"><i class="fa-solid fa-industry"></i> VELUX A/S, Denmark</span>
+                            </div>
+                            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Jan. 2013 – Jul. 2015</span>
+                        </div>
+                        <p class="timeline-body">
+                            Motion control and advanced PLC programming of automation solutions and machinery for VELUX.
+                        </p>
+                        <ul class="timeline-bullets">
+                            <li>Siemens SIMOTION & SIMATIC Programming</li>
+                            <li>OMAC PackML Standardization.</li>
+                            <li>MES & Traceability (RFID).</li>
+                            <li>Manufacturing IT.</li>
+                            <li>Technology Development.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="role-title">Automation Engineer</h3>
+                                <span class="company-name"><i class="fa-solid fa-industry"></i> Eltronic a/s, Denmark</span>
+                            </div>
+                            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Mar. 2011 – Dec. 2012</span>
+                        </div>
+                        <p class="timeline-body">
+                            Project-based automation engineering, PLC & HMI programming for Danish customers within manufacturing, food & beverage and packaging industries. Hands-on commissioning and site support.
+                        </p>
+                        <ul class="timeline-bullets">
+                            <li>Project Management.</li>
+                            <li>CE-marking, Documentation & Risk Assessment.</li>
+                            <li>Electrical Engineering (CAD).</li>
+                            <li>Functional Safety.</li>
+                            <li>Robot Engineering.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="role-title">Electrical Technician</h3>
+                                <span class="company-name"><i class="fa-solid fa-industry"></i> Eltronic a/s, Denmark</span>
+                            </div>
+                            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Okt. 2009 – Feb. 2011</span>
+                        </div>
+                        <p class="timeline-body">
+                            On-site service technician for Danish customers within manufacturing, food & beverage and packaging industries.
+                        </p>
+                        <ul class="timeline-bullets">
+                            <li>PLC, HMI & SCADA operation and maintenance.</li>
+                            <li>Electrical documentation, installation and troubleshooting.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="role-title">On-site Supervisor</h3>
+                                <span class="company-name"><i class="fa-solid fa-industry"></i> Schur Packaging Systems a/s, Denmark</span>
+                            </div>
+                            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Aug. 2008 – Okt. 2009</span>
+                        </div>
+                        <p class="timeline-body">
+                            Mechanical and electrical supervision of packaging machinery installation, commissioning, and handover to end-users. Coordinated multi-disciplinary teams and ensured compliance with project timelines and quality standards.
+                        </p>
+                        <ul class="timeline-bullets">
+                            <li>Mechanical and electrical supervision.</li>
+                            <li>PLC & HMI commissioning.</li>
+                            <li>International Projects.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Community -->
+    <section class="section certifications-section" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">At a glance</span>
+                <h2 class="section-title">Certifications & Community Engagement</h2>
+            </div>
+            <div class="cert-grid">
+                
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+                    <div>
+                        <h3>CMSE® - Certified Machinery Safety Expert</h3>
+                        <p class="cert-issuer">TÜV Nord & Pilz</p>
+                        <p class="cert-desc">Certified specialist in functional safety, hazard analysis, safety controller design, and Machinery Regulation compliance.</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-solid fa-microchip"></i></div>
+                    <div>
+                        <h3>Siemens SIMATIC & SIMOTION Specialist</h3>
+                        <p class="cert-issuer">Siemens Industrial Automation</p>
+                        <p class="cert-desc">Expert-level proficiency in S7-1500, TIA Portal, SIMOTION motion control, and Siemens Unified HMI/SCADA.</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-solid fa-house-signal"></i></div>
+                    <div>
+                        <h3>Smart Home & IIoT Community Keynote</h3>
+                        <p class="cert-issuer">Sommerhack / GitHub Community</p>
+                        <p class="cert-desc">Keynote speaker and active open-source contributor in Home Assistant, IIoT integrations, and edge automation protocols.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-info">
+                    <span class="section-tag">Let's Connect</span>
+                    <h2>Interested in Strategic OT Advisory or Architecture Collaboration?</h2>
+                    <p>Whether you need executive guidance on OT cybersecurity, plant-floor standardization, or complex robotics & motion control architecture, feel free to reach out.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <span>Direct Email</span>
+                                <a href="mailto:lasse@hedeby.net">lasse@hedeby.net</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <span>Phone</span>
+                                <a href="tel:+4551925089">+45 5192 5089</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <span>Location</span>
+                                <p>Canadavej 10, DK-7323 Give, Denmark</p>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <img src="assets/map-image.png" alt="Contact Illustration" class="contact-image">
             </div>
         </div>
-        <!-- Portfolio item 3 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Luk" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">OT Security</h2>
-                                    <p>We help manufacturing executives, technical directors, and plant managers bridge the gap of OT security. Drawing on 20+ years of hands-on industrial automation experience - and a proven track record leading global OT security standards for enterprise manufacturing - we deliver cybersecurity frameworks that protect critical infrastructure without slowing down production.</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Specialist:</strong>
-                                           IEC 62443 &#x2022; Backup & Restore &#x2022; Remote Access &#x2022; Governance &#x2022; Scalability
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Lasse Hamer Hedeby — Enterprise OT Architect & Senior Automation Engineer. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="https://linkedin.com/in/lasse-hamer-hedeby" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/LasseHedeby" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
             </div>
         </div>
-        <!-- Portfolio item 4 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Luk" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Standardization</h2>
-                                    <p>Standardization is a key factor for efficiency and quality in the industry. By utilizing well-known standards such as OMAC PackML and Unified Namespace (UNS), we create structured and modular solutions that enable faster cycle times, reuse of existing solutions, and scalability. This approach reduces errors, increases reliability, and provides the opportunity to focus more on finding the right solutions rather than dealing with technological challenges. Standardization and modularization thus ensure a streamlined and efficient project execution.</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Specialist:</strong>
-                                           OMAC PackML &#x2022; Modularization &#x2022; PLC & HMI Templates &#x2022; Unified Namespace
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 5 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Luk" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Machine Safety</h2>
-                                    <p>Machine safety is crucial for ensuring both operator safety and efficient production. We have extensive experience in developing safe, effective, and simple solutions that meet the necessary safety standards. Proper CE marking and validation of the machine's safety systems are fundamental steps in this process, as they ensure that the machines comply with all requirements and operate safely in service. Our expertise ensures that the safety systems are precisely implemented and validated, thereby minimizing the risk of errors and enhancing productivity.</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Specialist:</strong>
-                                            CE Marking &#x2022; Machine Regulation (MR) &#x2022; Validation &#x2022; Risk Assessment
-                                        </li>
-                                        <li>
-                                            <strong>Certification:</strong>
-                                            CMSE&#174; - Certified Machinery Safety Expert (TÜV Nord)
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 6 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Luk" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Technical Lead</h2>
-                                    <p>We can participate as technical leads in project teams with a special focus on automation and digitalization. With several years of experience in design, procurement, approval, and implementation of advanced custom-built production lines, both in Denmark and internationally, we ensure a structured and efficient project execution. Our expertise in advanced technology and digitalization makes us a strong partner in driving complex projects from idea to finished solution.</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Specialist:</strong>
-                                           Project Design with Focus on Automation and Digitalization &#x2022; FAT/SAT &#x2022; Commissioning &#x2022; Documentation
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
